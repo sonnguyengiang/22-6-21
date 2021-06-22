@@ -1,21 +1,19 @@
 import java.util.*;
 
 public class test {
-    public static void change(String[] arr){
-        Stack<String> stack = new Stack<>();
-        for (int i = 0; i < arr.length; i++){
-            stack.push(arr[i]);
-        }
-        for (int i = 0; i < arr.length; i++){
-            arr[i] = stack.pop();
-        }
-        for (String x: arr){
-            System.out.print(x + " ");
-        }
-    }
 
     public static void main(String[] args) {
-        String[] x = {"x","y","z"};
-        change(x);
+        String s1="asd asd wa da awwa";
+        String[] words=s1.split("\\s");
+        Stack<String> stack = new Stack<>();
+        for (int i = 0; i < words.length; i++){
+            stack.push(words[i]);
+        }
+        for (int i = 0; i < words.length; i++){
+            words[i] = stack.pop();
+        }
+        for (String a: words){
+            System.out.println(a);
+        }
     }
 }
