@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class test {
+public class ChangeByStrings {
 
     public static void main(String[] args) {
         String s1="asd asd wa da awwa";
