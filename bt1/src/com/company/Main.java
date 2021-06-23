@@ -9,6 +9,7 @@ public class Main {
         abc.add(3, 123);
         abc.add(4, 123);
         System.out.println(abc.get(2));
-
+        abc.clear();
+        System.out.println(abc.get(2));
     }
 }
